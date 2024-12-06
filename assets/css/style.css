@@ -1,0 +1,117 @@
+:root{
+    --cor-verde: #97de5d;
+    --cor-azul: #4298f1;
+    --cor-branco-100: #fff;
+    --cor-branco-200: #f7f7f7;
+    --cor-preto-1000: #000;
+    --cor-preto-800: #1b1b1b;
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{list-style: none;}
+
+body{
+    font-size: 1.6rem;
+}
+
+#app{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+main, #mapContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+}
+
+#mapContainer{
+    grid-column: 1/4;
+}
+
+#language-select-area{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#language-select{
+    padding: .5rem;
+    font-size: 1.2rem;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco-100);
+    border: none;
+}
+
+#language-select option{
+    background-color: var(--cor-branco-200);
+    color: var(--cor-verde);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar nav{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar nav form{
+    width: 100%;
+}
+
+#pesq-area div{
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    grid-template-columns: auto 10%;
+    background-color: var(--cor-branco-100);
+}
+
+#pesq-area input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#pesq-area button{
+    background-color: transparent;
+    border: none;
+}
+
+#pesq-area-categorias,li{
+    display: flex;
+}
+
+#pesq-area-categorias{
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#pesq-area-categorias li{
+    padding: .5rem;
+    display: flex;
+    font-size: 1rem;
+    background-color: var(--cor-branco-200);
+    border: 1px solid var(--cor-preto-800);
+    border-radius: 10px;
+}

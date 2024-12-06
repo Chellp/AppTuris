@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>App Turismo</title>
+</head>
+
+
+<body>
+    <div id="app">
+        <div id="mapContainer"></div> <!-- #mapContainer -->
+
+        <section id="menulateral-usuario">
+            <h2>Nome Completo Usuário</h2>
+        </section>
+
+        <main>
+            <header class="navbar">
+
+                <div id="language-select-area">
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="pt">Português</option>
+                        <option value="es">Español</option>
+                        <option value="po">Polonês</option>
+                        <option value="it">Italiano</option>
+                    </select> <!-- #language-select -->
+                </div> <!-- #language-select-area -->
+
+                <nav>
+                    <form id="pesq-area">
+                        <div>
+                            <input type="text" placeholder="Pesquisar">
+                            <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                        </div>
+                    </form><!-- #pesq-area -->
+
+                    <ul id="pesq-area-categorias">
+                        <li>
+                            <img src="" alt="">
+                            <p>Item</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Item</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Item</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>Item</p>
+                        </li>
+                    </ul> <!-- #pesq-area-categorias -->
+                </nav>
+
+            </header>
+            <a href="cadastrarMotorista.html" id="form-teste">formulario</a>
+        </main>
+    </div>
+
+
+    <!-- ======================= SCRIPTS ======================= -->
+
+    <!-- Javascript -->
+    <script type="module" src="js/main.js"></script>
+    <!-- Javascript -->
+
+    <!-- Carregar ícones -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Carregar ícones -->
+
+    <!-- API para o Mapa - HERE Maps API -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <!-- API para o Mapa - HERE Maps API -->
+
+
+
+</body>
+
+<footer>
+    <p id="footer-text">Todos os direitos reservados.</p>
+</footer>
+
+</html>
